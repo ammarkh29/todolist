@@ -1,13 +1,17 @@
 // index.js
 import "./styles.css";
-import { greeting } from "./greeting.js";
+import { Task, Project } from "./todos.js";
 
-console.log(greeting);
 
-// src/index.js
-import odinImage from "./odin.png";
-   
-const image = document.createElement("img");
-image.src = odinImage;
-   
-document.body.appendChild(image);
+const projects = []
+
+
+projects.push(new Project("Default"))
+projects.push(new Project("Home"))
+projects.push(new Project("Work"))
+
+
+container = document.querySelector(".sidebar")
+
+
+

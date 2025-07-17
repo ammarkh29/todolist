@@ -1,4 +1,23 @@
-/* styles.css */
 body {
-  background-color: rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
 }
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container {
+    flex-grow: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: fit-content(33%);
+    gap: 20px;
+}
+
+
