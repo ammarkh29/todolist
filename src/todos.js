@@ -17,19 +17,15 @@ class Task {
 }
 
 class Project {
-    tasks = {}
+    tasks = new Map()
     name;
 
     constructor(name) {
         this.name = name;
     }
 
-    get tasks() {
-        return tasks
-    }
-
     addTask(task) {
-        this.tasks[task.id] = task
+        this.tasks.set(task.id, task)
     }
 
     removeTask(index) {
